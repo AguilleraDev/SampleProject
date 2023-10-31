@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM_API_SampleProject.Views.ListaView"
+             Title="ListaView">
+    <VerticalStackLayout>
+        <Label 
+            Text="{Binding Lista.UserId}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+       
+        
+        <Label Text="{Binding Lista.Id}"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"  />
+        
+        <Label
+            Text="{Binding Lista.Title}"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"  />
+
+        <CheckBox x:Name="Completed"
+                  Color="#4E000B"
+                 IsChecked="True"
+                  VerticalOptions="Center"
+                  HorizontalOptions="Center"
+        />
+        <CheckBox CheckedChanged="OnCheckBoxCheckedChanged" />
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
